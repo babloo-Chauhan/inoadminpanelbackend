@@ -14,7 +14,8 @@ const PORT =  process.env.PORT || 5001;
 
 // Middleware to parse JSON requests
 app.use(express.json());
-app.use(cors({ origin: "http://localhost:3000" }));
+app.use(cors()); // allows any origin
+
 app.use(express.urlencoded({ extended: true }));
 
 
